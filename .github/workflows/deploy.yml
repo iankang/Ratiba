@@ -37,6 +37,6 @@ jobs:
           script: |
             docker stop ratiba-container
             docker rm ratiba-container
-            docker pull ikangethe/ratiba-container:latest
-            docker run -d -p "9090:9090" --restart=unless-stopped --name=ratiba-container ikangethe/ratiba-container:latest
+            docker pull ikangethe/ratiba:latest
+            docker run -d -p "9090:9090" --restart=unless-stopped --name=ratiba-container ikangethe/ratiba:latest
             docker ps -a
