@@ -23,6 +23,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 ---
 server:
   port: 9090
@@ -41,3 +44,9 @@ spring:
     url: jdbc:postgresql://38.242.219.131:37821/ratiba_test
     username: keycloak
     password: keycloak
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

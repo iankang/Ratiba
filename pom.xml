@@ -107,11 +107,11 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>${postgresql.version}</scope>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.postgresql</groupId>-->
+<!--			<artifactId>postgresql</artifactId>-->
+<!--			<scope>${postgresql.version}</scope>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>io.fusionauth</groupId>
 			<artifactId>fusionauth-java-client</artifactId>
