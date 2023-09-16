@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: production
+
+---
+server:
+  port: 9090
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://38.242.219.131:9011/.well-known/jwks.json
+          issuer-uri: http://38.242.219.131:9011/
+  config:
+    activate:
+      on-profile: development
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://38.242.219.131:37821/ratiba_test
+    username: keycloak
+    password: keycloak
+  jpa:
+    hibernate:
+      ddl-auto: create
+---
+server:
+  port: 9091
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://38.242.219.131:9011/.well-known/jwks.json
+          issuer-uri: http://38.242.219.131:9011/
+  config:
+    activate:
+      on-profile: development
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://38.242.219.131:37821/ratiba_prod
+    username: keycloak
+    password: keycloak
