@@ -38,6 +38,6 @@ spring:
       on-profile: production
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://38.242.219.131:37821/ratiba_prod
+    url: jdbc:postgresql://38.242.219.131:37821/ratiba_test
     username: keycloak
     password: keycloak
