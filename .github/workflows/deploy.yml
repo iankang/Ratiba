@@ -23,10 +23,10 @@ jobs:
           context: .
           push: true
           tags: ikangethe/ratiba:latest
-  deploy_to_think-server:
+  deploy_to_kangethe-server:
     runs-on: ubuntu-latest
     needs: build_and_push
-    name: Deploy to Think Server
+    name: Deploy to Kangethe Server
     steps:
       - name: Connect with SSH and Deploy
         uses: appleboy/ssh-action@master
