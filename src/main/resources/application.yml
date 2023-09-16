@@ -74,4 +74,8 @@ springdoc:
   api-docs:
     enabled: true
     path: /swagger-ui
+oidc:
+  issuer: think.net
+  auth_url: http://38.242.219.131:9011/oauth2/authorize
+  token_url: http://38.242.219.131:9011/oauth2/token
 
