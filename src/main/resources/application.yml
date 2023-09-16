@@ -29,6 +29,12 @@ spring:
 ---
 server:
   port: 9090
+  ssl:
+    enabled: true
+    key-store: /etc/letsencrypt/live/kangethe.me/kangethe.me.keystore
+    key-store-password: kangethe
+    key-store-type: PKCS12
+    key-alias: kangethe.me
 spring:
   security:
     oauth2:
