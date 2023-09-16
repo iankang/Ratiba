@@ -1,0 +1,13 @@
+version: '3.1'
+volumes:
+  db-data:
+services:
+  app:
+    container_name: ratiba-backend
+    image: ratiba-backend:latest
+    restart: unless-stopped
+    platform: linux/arm64
+    build:
+      context: .
+    ports:
+      - "9090:9090"
