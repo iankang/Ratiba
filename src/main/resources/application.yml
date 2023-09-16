@@ -26,6 +26,9 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+springdoc:
+  api-docs:
+    enabled: true
 ---
 server:
   port: 9090
@@ -56,3 +59,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+springdoc:
+  api-docs:
+    enabled: true
+
