@@ -29,12 +29,20 @@ spring:
 springdoc:
   show-actuator: true
   swagger-ui:
-    path: /swagger-ui.html
-    tags-sorter: alpha
-    operations-sorter: alpha
-  api-docs:
-    enabled: true
-    path: /swagger-ui
+    oauth:
+      client-id: ee89e25c-6adf-45df-9abd-57bd5a8307af
+      client-secret: xJGeaBz8N3TaoZadLTaLbGGaMKSkuk2X1os2Drewml0
+#  swagger-ui:
+#    path: /swagger-ui.html
+#    tags-sorter: alpha
+#    operations-sorter: alpha
+#  api-docs:
+#    enabled: true
+#    path: /swagger-ui
+oidc:
+  issuer: ratiba.com
+  auth_url: http://38.242.219.131:9011/oauth2/authorize
+  token_url: http://38.242.219.131:9011/oauth2/token
 ---
 server:
   port: 9090
@@ -68,14 +76,11 @@ spring:
 springdoc:
   show-actuator: true
   swagger-ui:
-    path: /swagger-ui.html
-    tags-sorter: alpha
-    operations-sorter: alpha
-  api-docs:
-    enabled: true
-    path: /swagger-ui
+    oauth:
+      client-id: ee89e25c-6adf-45df-9abd-57bd5a8307af
+      client-secret: xJGeaBz8N3TaoZadLTaLbGGaMKSkuk2X1os2Drewml0
 oidc:
-  issuer: think.net
+  issuer: ratiba.com
   auth_url: http://38.242.219.131:9011/oauth2/authorize
   token_url: http://38.242.219.131:9011/oauth2/token
 
